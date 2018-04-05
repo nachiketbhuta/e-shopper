@@ -7,6 +7,23 @@
 <html>
 <head>
 	<title>Digi Pay</title>
+	<style>
+		input[type=submit] {
+    		padding: 5px 15px; 
+			background: #ccc; 
+			font-size: 16px;
+    		border:0 none;
+    		cursor:pointer;
+    		-webkit-border-radius: 5px;
+    		border-radius: 5px; 
+		}
+		
+		.p {
+			font-size: 16px;
+			text-decoration: bold;
+		}
+
+	</style>
 </head>
 <body>
 <center>
@@ -20,6 +37,8 @@
 
 <!-- Merchant AccNo: -->
 <input type="hidden" name="acc_no" value="6008201116034629"> <br>
+
+<p class = "p"> Redirecting to DigiPay Payment Gateway..... </p>
 
 <input type="submit" value="CLICK TO PAY">
 

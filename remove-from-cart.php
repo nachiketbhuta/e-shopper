@@ -15,6 +15,4 @@
 		}
 		header("Location: shopping-cart.php");
 	}
-
-
 ?>

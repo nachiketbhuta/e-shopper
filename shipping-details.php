@@ -8,12 +8,12 @@
 	$pin = $_POST['pin_code'];
 	$mobile = $_POST['mobile'];
 
-	$sql = "SELECT email FROM users WHERE email = '$email'";
+	$sql = "SELECT email FROM shipping_details WHERE email = '$email'";
   	$result = mysqli_query($db, $sql);
   
   	$count = mysqli_num_rows($result);
   
-  	if($count == 0){
+  	if($count == 0) {
 		
 		$sql = "INSERT INTO shipping_details VALUES('$email','$name','$address', '$pin', '$mobile')";
 
@@ -21,8 +21,8 @@
 	  	header("Location: payments.php");
   	}
   	else {
-
-		echo"Not successful";
+		//echo "Record already exists!";
+		header("Location: payments.php");
   	}
 
 ?>

@@ -1,8 +1,6 @@
 <?php 
-
 	session_start();
-	require 'DBConnect.php';
-
+	//var_dump($_SESSION['total']);
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +9,6 @@
 	<title>Digi Pay</title>
 </head>
 <body>
-
-
 <center>
 <form action="https://digipaym.000webhostapp.com/LoginPage.php" method="POST">
 

@@ -57,7 +57,7 @@
 							<span>
 								<span>Rs <?php echo $row['Price']; ?></span>
                                 <br><br><br><br>
-							  <a href="add-to-cart.php?id=<?php echo $row['ID']; ?>&action=add"><button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></a>
+							  <a href="add-to-cart.php?id=<?php echo $row['ID']; ?>"><button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button></a>
                             </span>
 							</div><!--/product-information-->
 						</div>

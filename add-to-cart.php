@@ -11,22 +11,17 @@
     $product = mysqli_fetch_object($result);
     var_dump($product);
 
-    if (isset($_GET["action"])) {
-      if ($_GET["action"] == "add") {
+    $username = $_COOKIE["username"];
+    $name = $product->Product_Name;
+    $imagePath = $product->Path;
+    $quantity = 1;
+    $price = $product->Price;
 
-        $username = $_COOKIE["username"];
-        $name = $product->Product_Name;
-        $imagePath = $product->Path;
-        $quantity = 1;
-        $price = $product->Price;
+    $sql = "INSERT INTO cart VALUES ('$username', '$id', '$name'
+          , '$imagePath', '$quantity', '$price')";
 
-        $sql = "INSERT INTO cart VALUES ('$username', '$id', '$name'
-              , '$imagePath', '$quantity', '$price')";
-
-        $result = mysqli_query($db, $sql); 
-
-      }
-    }
+    $result = mysqli_query($db, $sql); 
+  
     header("Location: shopping-cart.php");
   }
 

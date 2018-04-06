@@ -57,8 +57,8 @@
                     <div class="productinfo text-center">
                       <img src="<?php echo $row['Path']; ?>" alt="<?php echo $row['Product_Name']; ?>" style="height: 241px;"/>
                       <h2>Rs <?php echo $row['Price']; ?></h2>
-                      <a href="product-details.php?id=<?php echo (int)$row['ID'];?>"><p><?php echo $row['Product_Name']; ?></p></a>
-                      <a href="add-to-cart.php?id=<?php echo (int)$row['ID']; ?>&action=add" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                      <a href="product-details.php?id=<?php echo $row['ID'];?>"><p><?php echo $row['Product_Name']; ?></p></a>
+                      <a href="add-to-cart.php?id=<?php echo $row['ID']; ?>" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
                     </div>
                   </div>
                 </div>

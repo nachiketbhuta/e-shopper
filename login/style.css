@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(backgroung.jpg);
+  background: url(background.jpg);
   background-size: cover;
   font-family: sans-serif;
 }
@@ -10,8 +10,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 350px;
-  height: 420px;
   box-sizing: border-box;
   padding: 80px 40px;
   background: rgba(0, 0, 0, 0.5);

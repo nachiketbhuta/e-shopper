@@ -22,7 +22,7 @@ if (isset($_POST['email'])) {
       $mail->Port = 587;                                    // TCP port to connect to
 
       //Recipients
-      $mail->setFrom('eshopperabc@gmail.com');
+      $mail->setFrom('eshopperabc@gmail.com', 'E-Shopper');
       $mail->addAddress($_POST['email']);     // Add a recipient
       //$mail->addAddress('ellen@example.com');               // Name is optional
       //$mail->addReplyTo('info@example.com', 'Information');

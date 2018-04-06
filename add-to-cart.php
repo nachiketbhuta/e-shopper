@@ -17,8 +17,7 @@
     $quantity = 1;
     $price = $product->Price;
 
-    $sql = "INSERT INTO cart VALUES ('$username', '$id', '$name'
-          , '$imagePath', '$quantity', '$price')";
+    $sql = "INSERT INTO cart VALUES ('$username', '$id', '$name', '$imagePath', '$quantity', '$price')";
 
     $result = mysqli_query($db, $sql); 
   

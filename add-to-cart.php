@@ -9,7 +9,7 @@
     $sql = "SELECT * FROM products WHERE ID = '$id'";
     $result = mysqli_query($db, $sql);
     $product = mysqli_fetch_object($result);
-    var_dump($product);
+    //var_dump($product);
 
     $username = $_COOKIE["username"];
     $name = $product->Product_Name;
